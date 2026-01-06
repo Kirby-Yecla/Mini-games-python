@@ -1,8 +1,7 @@
-
-
 import secrets
 import time
 import os
+
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -53,7 +52,6 @@ def lucky_9():
         time.sleep(1)
         
         hit= str(input("\nHit it?[y/n]: ")).lower()
-
         
         card3_info= ""
 
@@ -100,6 +98,7 @@ def lucky_9():
             print(f"Computer wins: {wins_comp}\nYour wins: {wins_user}")
             break
         clear()
+
 
 
 lucky_9()
